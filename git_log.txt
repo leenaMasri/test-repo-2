@@ -1,0 +1,77 @@
+     1	17:36	vncpasswd
+     6	10:18	git log '
+    10	11:32	git log --pretty=tformat:%H 2017-02-04..2018-03-01
+    14	11:43	git log -after a88c84ddf42066611e76e6cb690144e5357d132c -before da39b1326dbc2edfe518b90672734a08f3c13458
+    15	11:43	git log -after=a88c84ddf42066611e76e6cb690144e5357d132c -before=da39b1326dbc2edfe518b90672734a08f3c13458
+    16	11:44	git log -after=Thu Mar 22 -before=Thu MAR 27
+    17	11:45	git log -after="22-3-2018" -before="27-3-2018"
+    18	11:46	git log -after="2018-3-22" -before="2018-3-27"
+    19	11:46	git log --after="2018-3-22" --before="2018-3-27"
+    21	11:47	git log --after="a88c84ddf42066611e76e6cb690144e5357d132c" --before="1f99848edadfffa903b8ba1286a935f1b92b2845"
+    24	14:02	git logg
+    27	14:05	git diff --stat @{2013-11-01}..@{2013-11-30}
+    28	14:05	git diff --stat @{2018-3-01}..@{2018-3-30}
+    29	14:05	git diff --stat @2018-3-01..@2018-3-30
+    30	14:06	git diff --stat @{fromDate}..@{toDate}
+    31	14:06	git diff --stat @2018/3/22..@2018/3/30
+    37	14:16	git diff --stat @{2019-08-20}..@{2019-08-21}
+    39	14:17	git diff --stat @{2018-03-22}..@{2018-03-27}
+    42	14:17	git diff --stat @{2018-03-21}..@{2018-03-27}
+    44	14:19	git diff @{2018-03-21}..@{2018-03-27}
+    45	14:19	git diff
+    47	14:21	git status --porcelain | awk 'match($1, "D"){print $2}' | xargs git rm
+    48	14:22	git status --porcelain
+    49	14:22	git diff'
+    51	14:25	git diff --name-status
+    52	14:54	git diff --name-only HEAD~10.. --
+    53	14:54	git diff --name-only HEAD~.. --
+    55	14:54	git diff --name-only .. --
+    56	14:54	git diff --name-only ~.. --
+    60	14:55	git diff --name-only a88c84ddf42066611e76e6cb690144e5357d132c
+    67	15:00	git whatchanged --since '22/3/2018' --until '27/3/2018' --oneline --name-only --pretty=format: | sort | uniq >> changedlist.txt
+    69	15:00	git whatchanged --since '22/3/2018' --until '27/3/2018' --oneline --name-only --pretty=format >> changedlist.txt
+    70	15:00	git whatchanged --since '22/3/2018' --until '27/3/2018' --oneline --name-only >> changedlist.txt
+    71	15:00	kate changedlist.txt
+    74	15:01	git whatchanged --since '21/3/2018' --until '27/3/2018' --oneline
+    81	16:46	git cat-file commit da39b13
+    83	16:46	git cat-file commit da39b13453*
+    84	16:46	git cat-file commit da39b13453?
+    85	16:46	git cat-file commit da39b13453?8
+    86	16:46	ccls
+    89	16:47	git whatchanged --since '22/3/2018' --until '28/3/2018' --oneline
+    90	16:47	git whatchanged --since '21/3/2018' --until '28/3/2018' --oneline
+    91	16:47	git cat-file commit da39b13453
+    92	16:47	git cat-file commit 6411e30
+    93	16:47	git cat-file commit 88c84d
+   105	9:21	git diff --name-status a88c84ddf42066611e76e6cb690144e5357d132c da39b1326dbc2edfe518b90672734a08f3c13458
+   115	12:43	git log
+   116	13:07	cd /home/lina/git_repo/small_repo
+   117	13:07	ls
+   118	13:07	pwd
+   119	9:53	git diff --name-only a88c84ddf42066611e76e6cb690144e5357d132c da39b1326dbc2edfe518b90672734a08f3c13458
+   120	9:53	git whatchanged --since '22/3/2018' --until '27/3/2018' --oneline'
+   121	9:53	git whatchanged --since '22/3/2018' --until '27/3/2018' --oneline
+   122	9:55	git whatchanged --name-only --since '22/3/2018' --until '27/3/2018' --oneline
+   123	9:57	git status
+   124	9:59	git diff --name-only
+   126	10:05	git diff --name-only a88c84ddf42066611e76e6cb690144e5357d132c..da39b1326dbc2edfe518b90672734a08f3c13458
+   127	10:08	git diff --name-only a88c84ddf42066611e76e6cb690144e5357d132c..HEAD
+   129	10:08	git log --name-only a88c84ddf42066611e76e6cb690144e5357d132c..HEAD
+   130	10:09	git log --name-only a88c84ddf42066611e76e6cb690144e5357d132c..HEA'D
+   132	10:33	git diff --name-only "@{3 days ago}" "@{2 days ago}"
+   133	10:34	git diff --name-only "@{3 years ago}" "@{2 days ago}"
+   134	10:34	git diff --name-status "@{3 years ago}" "@{2 days ago}"
+   135	10:35	git diff --name-only --[Dsince '22/3/2018' --until '27/3/2018' --oneline
+   136	10:35	git diff --name-only --since '22/3/2018' --until '27/3/2018' --oneline
+   137	10:36	git diff --name-only --since '22/3/2018' --until '27/3/2018' --oneline'
+   138	10:36	git whatchanged --since '04/14/2013' --until '05/22/2014' --oneline --name-only --pretty=format: | sort | uniq >> changedlist.txt
+   140	10:36	git whatchanged --since '04/14/2013' --until '05/22/2014' --oneline --name-only
+   141	10:36	git whatchanged --since '04/14/2013' --until '05/22/2014' --oneline
+   143	10:37	git whatchanged --since '04/14/2018' --until '05/22/2018' --oneline --name-only --pretty=format: | sort | uniq >> changedlist.txt
+   144	10:37	kate changedlist.txt &
+   145	10:37	git whatchanged --since '04/14/2018' --until '05/22/2018' --oneline --name-only --pretty=format: | sort | uniq
+   146	10:37	cls
+   147	10:37	git whatchanged --since '04/14/2013' --until '05/22/2014'
+   148	10:37	git log -after a88c84ddf42066611e76e6cb690144e5357d132c -before da39b1326dbc2edfe518b90672734a08f3c13458'
+   149	10:37	history
+   150	10:37	history > git_log.txt
