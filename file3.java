@@ -12,5 +12,6 @@ import java.util.TimeZone;
 public class File3 {
 
     // nothing serious, just an empty class
+    var x;
 
 }
