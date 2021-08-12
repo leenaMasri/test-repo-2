@@ -13,6 +13,7 @@ public class File3 {
 
     // nothing serious, just an empty class
     int x;
+    int y;
       
 
 }
