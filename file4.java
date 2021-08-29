@@ -2,6 +2,8 @@ package test1;
 
 public class File1 {
     int x;
+    int y;
+    
 
     private final int lineNumber;
     private final String line;
