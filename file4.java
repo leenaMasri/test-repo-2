@@ -3,7 +3,7 @@ package test1;
 public class File1 {
     int x;
     int y;
-    
+    int z;
 
     private final int lineNumber;
     private final String line;
